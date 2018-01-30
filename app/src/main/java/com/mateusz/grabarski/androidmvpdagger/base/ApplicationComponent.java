@@ -1,7 +1,5 @@
 package com.mateusz.grabarski.androidmvpdagger.base;
 
-import com.mateusz.grabarski.androidmvpdagger.MainActivity;
-
 import dagger.Component;
 
 /**
@@ -11,5 +9,5 @@ import dagger.Component;
         ApplicationModule.class
 })
 public interface ApplicationComponent {
-    void inject(MainActivity target);
+
 }

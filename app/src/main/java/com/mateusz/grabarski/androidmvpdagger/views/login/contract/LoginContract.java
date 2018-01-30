@@ -31,6 +31,8 @@ public interface LoginContract {
     }
 
     interface Presenter {
+        void setView(LoginContract.View view);
+
         void loginButtonClick();
 
         void getCurrentUser();
