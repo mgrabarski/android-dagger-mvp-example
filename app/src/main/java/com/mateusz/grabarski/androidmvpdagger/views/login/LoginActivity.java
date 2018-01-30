@@ -45,11 +45,12 @@ public class LoginActivity extends AppCompatActivity implements LoginContract.Vi
         super.onResume();
 
         presenter.setView(this);
+        presenter.getCurrentUser();
     }
 
     @OnClick(R.id.activity_login_btn)
     public void onLoginClick() {
-
+        presenter.loginButtonClick();
     }
 
     @Override
@@ -74,7 +75,7 @@ public class LoginActivity extends AppCompatActivity implements LoginContract.Vi
 
     @Override
     public void showUserSaveMessage() {
-        Toast.makeText(this, "User saver", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "User saved", Toast.LENGTH_LONG).show();
     }
 
     @Override

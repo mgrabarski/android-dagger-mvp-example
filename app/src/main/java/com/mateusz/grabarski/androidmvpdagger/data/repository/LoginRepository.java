@@ -8,5 +8,5 @@ import com.mateusz.grabarski.androidmvpdagger.data.models.User;
 
 public interface LoginRepository {
     User getUser();
-    void saveUser();
+    void saveUser(User user);
 }
